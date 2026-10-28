@@ -1,7 +1,12 @@
 import 'package:belajar_flutter_layout/grid_view.dart';
 import 'package:belajar_flutter_layout/minggu1_2/main.dart';
+import 'package:belajar_flutter_layout/minggu1_2/materi4.dart';
+import 'package:belajar_flutter_layout/minggu1_2/materi5.dart';
+import 'package:belajar_flutter_layout/minggu1_2/materi6.dart';
 import 'package:belajar_flutter_layout/minggu1_2/materidua.dart';
 import 'package:belajar_flutter_layout/minggu1_2/materi3.dart';
+import 'package:belajar_flutter_layout/minggu1_2/produk_screen.dart';
+import 'package:belajar_flutter_layout/minggu1_2/profil_screen.dart';
 
 import 'package:belajar_flutter_layout/tab_bar.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +22,7 @@ class LatihanLayoutApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MateriTigaScreen(),
+      home: ProdukScreen(),
     );
   }
 }
@@ -35,7 +40,7 @@ class LatihanStackPage extends StatelessWidget {
         foregroundColor: Colors.white,
       ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        //crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Stack(
             children: [
