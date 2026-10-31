@@ -9,6 +9,10 @@ import 'package:belajar_flutter_layout/minggu1_2/produk_screen.dart';
 import 'package:belajar_flutter_layout/minggu1_2/profil_screen.dart';
 
 import 'package:belajar_flutter_layout/tab_bar.dart';
+import 'package:belajar_flutter_layout/tahap_dua/tahap2_dua.dart';
+import 'package:belajar_flutter_layout/tahap_dua/tahap2_empat.dart';
+import 'package:belajar_flutter_layout/tahap_dua/tahap2_satu.dart';
+import 'package:belajar_flutter_layout/tahap_dua/tahap2_tiga.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,7 +26,7 @@ class LatihanLayoutApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProdukScreen(),
+      home: TahapDuaEmpatScreen(),
     );
   }
 }
