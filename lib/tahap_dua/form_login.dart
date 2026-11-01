@@ -1,3 +1,4 @@
+import 'package:belajar_flutter_layout/tahap_dua/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:belajar_flutter_layout/tahap_dua/form_register.dart'; // Sesuaikan path ini
 
@@ -80,11 +81,21 @@ class _FormLoginState extends State<FormLogin> {
                 const SizedBox(height: 30),
                 
                 ElevatedButton(
-                  onPressed: (){
-                    if(_formKey.currentState!.validate()){
-                      print('Validasi Sukses!');
-                      print('Email: ${_emailController.text}');
-                      print('Password: ${_passwordController.text}');
+                  onPressed: () {
+                    // 1. Cek validasi form dulu
+                    if (_formKey.currentState!.validate()) {
+                      
+                      // 2. Ambil teks email yang diketik user dari controller
+                      final emailDiketik = _emailController.text;
+
+                      // 3. Pindah halaman sekaligus lempar datanya ke dalam constructor HomeScreen
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => HomeScreen(emailUser: emailDiketik), 
+                        )
+                      );
+                      
                     } else {
                       print('Ada inputan yang salah bro!');
                     }
