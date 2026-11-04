@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  // Menjalankan aplikasi mulai dari widget LatihanDrawerApp
-  runApp(const LatihanDrawerApp());
-}
 
 class LatihanDrawerApp extends StatelessWidget {
   const LatihanDrawerApp({super.key});
