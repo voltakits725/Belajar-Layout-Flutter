@@ -1,5 +1,6 @@
 import 'package:belajar_flutter_layout/minggu3/drawer.dart';
 import 'package:belajar_flutter_layout/minggu3/tab_bottom_drawer.dart';
+import 'package:belajar_flutter_layout/minggu3/tes1.dart';
 import 'package:flutter/material.dart';
 //import 'package:belajar_flutter_layout/tahap_dua/form_login.dart'; // Sesuaikan path ini
 
@@ -43,7 +44,7 @@ class MainApp extends StatelessWidget {
       ),
       
       // Halaman pertama yang dipanggil adalah FormLogin
-      home: const LatihanDrawerApp(),
+      home: const MyApp(),
     );
   }
 }
